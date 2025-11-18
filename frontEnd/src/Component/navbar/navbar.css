@@ -1,0 +1,217 @@
+.navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    color: white;
+}
+
+
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Let's Edit the Navbar part 1 . */
+
+.Navbar_part1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+
+}
+
+.Navbar_part1 img {
+    width: 32px;
+    height: 32px;
+}
+
+.Navbar_search {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    height: 70%;
+    background-color: #2A2A2A;
+    border-radius: 50px;
+    padding: 0 5px;
+}
+
+.Navbar_search:hover {
+    border: 2px solid white;
+}
+
+.Navbar_home {
+    margin-left: 20px;
+    background-color: #2A2A2A;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.Navbar_home img {
+    width: 30px;
+    height: 30px;
+}
+
+.Navbar_home:hover {
+    transform: scale(1.05);
+    /* This stretches the element 10 times wider */
+}
+
+.Navbar_search img {
+    width: 25px;
+    height: 25px;
+}
+
+.Navbar_search input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+
+/* Let's Edit the Navbar part 2 . */
+
+.Navbar_part2 {
+    padding: 10px 20px;
+    height: 100%;
+    align-items: center;
+
+}
+
+.Navbar_part2 ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.Navbar_part2 ul li {
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.Navbar_part2 ul li button {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 20px 25px;
+}
+
+#white {
+    color: white;
+}
+
+
+.hide {
+    display: none;
+}
+
+.hide button {
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px 25px;
+    font-size: 0.7em;
+    outline: none;
+}
+
+/* Lets make it responsive */
+
+@media (max-width: 1000px) {
+    .Navbar_part2 ul {
+        gap: 10px;
+    }
+
+    .Navbar_search input {
+        font-size: 15px;
+    }
+
+    .Navbar_search {
+        width: 70%;
+    }
+
+    .Navbar_home {
+        margin-left: 10px;
+    }
+
+    .Navbar_home img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width:850px) {
+    .navbar {
+        height: 8vh;
+        padding: 0 1%;
+    }
+
+    .Navbar_part2 ul li button {
+        background-color: white;
+        padding: 10px 10px;
+        border-radius: 20px 25px;
+    }
+
+    .Navbar_home {
+        margin-left: 2px;
+    }
+
+    .Navbar_home img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Navbar_search input::placeholder {
+        font-size: 0.7em;
+    }
+
+    .Navbar_part2 ul {
+        gap: 5px;
+    }
+}
+
+@media (max-width:700px) {
+    .Navbar_part2 {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .Navbar_home {
+        display: none;
+    }
+
+    .Navbar_part1 {
+        width: 100%;
+    }
+    .navbar {
+        height: 6vh;
+    }
+    .Navbar_search input::placeholder {
+        font-size: 0.65em;
+    }
+    .Navbar_search img {
+        width: 17px;
+        height: 17px;
+    }
+    .Navbar_search {
+        gap: 3px;
+    }
+}

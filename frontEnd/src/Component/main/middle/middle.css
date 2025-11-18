@@ -1,0 +1,213 @@
+.middle {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #321917, #121212);
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+}
+
+.middles {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #321917, #121212);
+    overflow: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    position: relative;
+}
+
+.middle_part1 {
+    height: 60%;
+    width: 90%;
+}
+
+.middle_part1_button {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.middle_part1_button button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #4E3938;
+    color: white;
+}
+
+.middle_part1_button button:first-child {
+    background-color: white;
+    color: black;
+}
+
+.middle_part1_playlist {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    padding-left: 26px;
+}
+
+.middle_part2 {
+    width: 100%;
+    margin-top: 5%;
+    padding: 20px;
+}
+
+.see_all {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.middle_part2_song {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+/* Scrollbar Track */
+.middle_part2_song::-webkit-scrollbar {
+    height: 8px;
+    /* horizontal scrollbar height */
+}
+
+/* Track Background */
+.middle_part2_song::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb */
+.middle_part2_song::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+
+/* Thumb Hover */
+.middle_part2_song::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+.middle_part3 {
+    width: 100%;
+}
+
+
+
+
+/* Scrollbar track */
+.middle::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Scrollbar thumb */
+.middle::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+/* Scrollbar thumb on hover */
+.middle::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.to_pro {
+    position: absolute;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.to_pro img {
+    width: 10px;
+    height: 10px;
+}
+
+.to_pro button {
+    background-color:black;
+    border-radius: 50%;
+    outline: none;
+    padding: 1px 2px;
+}
+
+
+
+
+@media (max-width:1000px) {
+    .middle_part1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .to_pro {
+        display: none;
+    }
+}
+
+
+@media (max-width : 400px) {
+    .middle {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .middle_part1_button {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .middle_part1_button button {
+
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: #4E3938;
+        color: white;
+
+    }
+
+    .middle_part2 {
+        width: 100%;
+        margin-top: 5%;
+        padding: 20px 10px;
+    }
+
+
+
+}
+
+.see_all p {
+    flex-shrink: 0;
+}

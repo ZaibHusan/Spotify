@@ -1,0 +1,10 @@
+.main {
+    height: 75%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.205); */
+    background-color: #000000;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    padding: 1px;
+}

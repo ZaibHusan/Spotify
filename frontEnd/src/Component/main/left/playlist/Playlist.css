@@ -1,0 +1,41 @@
+.Playlist {
+    width: 100%;
+    min-height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.Playlist:hover {
+    background-color: #333333;
+}
+.playlist_thumbnial {
+    width: 50px;
+    height: 80%;
+
+}
+
+.playlist_thumbnial img {
+     width: 50px;
+    height: 80%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+
+
+.Playlist_detils {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.Playlist_detils p {
+    font-size: 0.8em;
+color: rgba(255, 255, 255, 0.658);
+}
+
